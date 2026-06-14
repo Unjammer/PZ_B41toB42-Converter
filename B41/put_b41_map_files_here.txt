@@ -1,0 +1,7 @@
+Copy your Build 41 map files into this folder, then run ..\run.bat.
+
+Expected files include:
+
+- *.lotheader
+- world_*.lotpack
+- chunkdata_*.bin
