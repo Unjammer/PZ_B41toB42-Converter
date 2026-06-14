@@ -6,11 +6,6 @@ It converts a Build 41 map folder into the Build 42 cell/chunk layout by using
 the `projectzomboid.jar` and `jre64` already installed with the Steam version of
 Project Zomboid.
 
-## Project history
-
-This project has existed privately since at least Project Zomboid Build 42.8. It
-was simply not made public before this release package.
-
 ## Minimum requirements
 
 - Windows.
@@ -49,7 +44,7 @@ included so the wrapper can be audited or rebuilt.
 ## Quick use
 
 1. Extract the zip anywhere.
-2. Copy the Build 41 map files into the `B41` folder.
+2. Copy only the required Build 41 binary map files into the `B41` folder.
 3. Double-click `run.bat`.
 4. Converted Build 42 files are written to `B42`.
 
@@ -58,6 +53,33 @@ By default, `run.bat` expects Project Zomboid here:
 ```bat
 C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid
 ```
+
+## Recommended input cleanup
+
+Use a clean input folder. Before running the converter, remove files that are not
+part of the binary map data being converted.
+
+Recommended files to keep in `B41`:
+
+- `*.lotheader`
+- `world_*.lotpack`
+- `chunkdata_*.bin`
+- `worldmap.xml.bin`, if your map has one
+- `worldmap-forest.xml.bin`, if your map has one
+
+Recommended files to leave out:
+
+- `objects.lua`
+- `spawnpoints.lua`
+- `worldmap.xml`
+- biome-map or biomemap files
+- vegetation maps, zoning files, editor metadata, mod metadata
+- unrelated folders or helper files
+
+Extra files are not converted by this wrapper, and some unexpected files or
+folders can make the underlying Project Zomboid converter report errors. The
+safest workflow is to copy only the binary B41 map files listed above into a
+temporary `B41` input folder.
 
 ## Custom Project Zomboid install path
 

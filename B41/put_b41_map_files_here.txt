@@ -1,7 +1,13 @@
-Copy your Build 41 map files into this folder, then run ..\run.bat.
+Copy only the required Build 41 binary map files into this folder, then run
+..\run.bat.
 
 Expected files include:
 
 - *.lotheader
 - world_*.lotpack
 - chunkdata_*.bin
+- worldmap.xml.bin, if present
+- worldmap-forest.xml.bin, if present
+
+Leave out objects.lua, spawnpoints.lua, worldmap.xml, biome-map or biomemap
+files, editor metadata, mod metadata, unrelated folders and helper files.

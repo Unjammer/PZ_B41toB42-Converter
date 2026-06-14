@@ -2,9 +2,6 @@
 
 Release package for GitHub distribution.
 
-This project has existed privately since at least Project Zomboid Build 42.8. It
-was simply not made public before this release.
-
 ## Contents
 
 - Uses the user's local Steam Project Zomboid installation.
@@ -15,6 +12,8 @@ was simply not made public before this release.
 - Supports default `B41` -> `B42` folders or explicit input/output arguments.
 - Converts binary B41 map data to the B42 layout; it is not a complete map/mod
   migration tool.
+- Documents that the input folder should contain only binary map data files such
+  as `.lotheader`, `world_*.lotpack` and `chunkdata_*.bin`.
 
 ## Not included
 
