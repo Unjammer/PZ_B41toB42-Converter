@@ -35,17 +35,6 @@ installation on the user's machine.
 - `B41\` - default input folder.
 - `B42\` - default output folder.
 
-## Publishing layout
-
-This folder can be published as the GitHub project/repository content.
-
-For GitHub releases, attach the zip generated from this folder. The zip is the
-ready-to-use tool: users can extract it, put their B41 map files in `B41`, and
-run `run.bat`.
-
-Normal users do not need to compile anything. The source and `build.bat` are
-included so the wrapper can be audited or rebuilt.
-
 ## Quick use
 
 1. Extract the zip anywhere.
